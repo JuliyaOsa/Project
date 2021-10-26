@@ -1,0 +1,109 @@
+@media print {
+   .tm-sidebar,
+   .gallery-container,
+   .blocks,
+   .img-contact-us,
+   .carousel,
+   #contact,
+   .heading,
+   section::before {
+      display: none; 
+   } 
+}
+
+.img{
+    width:45%;
+}
+.flex-2-col:first-child {
+    min-height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.flex-2-col img {
+    height: 100%;
+}
+p::first-letter {
+    font-size: 30px;
+    color:#87CEFA;
+}
+
+.tm-banner {
+    padding-top: 20px;
+    background: none;
+    border: 0px;
+}
+
+section::before {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border: 30px solid transparent;
+    border-top: 0 solid transparent;
+    border-left: 225px solid #88cef9;
+}
+
+.carousel-inner 
+.tm-section-title {
+    color: gainsboro;
+    letter-spacing: 5px;
+}
+
+h2 + p {
+    font-style: italic;
+}
+
+.tm-section-description::first-letter{
+    line-height: 0;
+}
+
+.heading a {
+    color:black;
+    position: relative;
+}
+.heading a:visited {
+    text-decoration: underline;
+}
+.heading a:hover {
+    text-decoration: double underline;
+    color: #87CEFA;
+}
+.text {
+    position: relative;
+}
+.text::after {
+    content: "New";
+    position: absolute;
+    right: -20px;
+    top: -3px;
+    font-size: 10px;
+    color: red;
+}
+
+.box-work:nth-of-type(2n) {
+    background-color: #f5f5f5;
+}
+
+.box-work:nth-child(even) {
+    background-color: #c9c9c9;
+}
+
+.box-work {
+    padding: 10px
+}
+
+.mandatory-field::after{
+    content: '*';
+    color: red;
+}
+
+.btn {
+    display: block;
+    margin-left: auto;
+}
+
+.tm-nav-item-link:hover {
+    background: grey;
+}
